@@ -9,12 +9,12 @@ pipeline{
 		}
 		stage('Build Docker Image'){
 			steps{
-				sh 'docker build -t MedalmMan/node-app:latest .';
+				sh 'docker build -t medalman/node-app:latest .';
 			}
 		}
 		stage('Push Docker Image'){
 			steps{
-			    sh 'docker push MedalMan/node-app:latest';
+			    sh 'docker push medalman/mydockerrepo:latest';
 			}
 
 		}
